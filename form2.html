@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!-- action = recebe o endereço do arquivo/ página para onde os dados serão enviados. -->
+     <!-- method = determina como os dados serão enviados.-->
+    <form   action="https://formsubmit.co/p.damaceno@aluno.senai.br" method="post">
+
+        <!-- Muda a página de agradecimento, após preencher captcha. -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/pagesucesso.html">
+        
+        <!-- 1 Formulário -->
+        <h1>Formulário do Cliente</h1>
+        <!-- Nome -->
+        <div>
+        <label for="name">Nome</label>
+        </DIV>
+        <input type="text" name="name" id="name" placeholder="Nome e Sobrenome" maxlength="30" required>
+        <!-- maaxlenght limita quantidade de caracteres = VARCHAR(30) -->
+         <br>
+         <br>
+        <!-- Email -->
+         <div>
+        <label for="email">Email</label>
+        </div>
+        <input type="email" name="email" id="email" placeholder="email@email.com" maxlength="50" required autocomplete>
+        <!-- autocomplete: Quando o usuário preenche o campo e envia o formulário, os dados ficam salvos; 
+         assim, caso ele queira enviar o formulário novamente, não é necessário redigitar todos os dados. -->
+         <br>
+         <br>
+        <!-- Telefone -->
+         <div>
+         <label for="tel">Telefone</label>
+        </div>
+         <input type="tel" name="tel" id="tel" maxlength="11" placeholder="(xx) xxxxx-xxxx" autocomplete="on"><br>
+         <br>
+         <!-- Curriculo -->
+         <div> 
+         <label for="curriculum">Currículo</label>
+        </div>
+        <input type="file" name="curriculum" id="curriculum">
+         <br>
+         <br>
+         <!-- Mensagem -->
+          <div>
+            <label for="message">Mensagem</label>
+        </div>
+          <textarea name="message" id="message" rows="5" cols="20" maxlength="200" placeholder="Digite aqui sua Mensagem" required></textarea>
+          <br>
+          <br>
+        
+          <!-- Submit - botão enviar -->
+        <div>
+            <label for="submit"></label>
+            <input type = "submit" id="submit" style="border-radius: 5px;">
+        </div>
+
+        
+    </form>
+
+</body>
+</html>
